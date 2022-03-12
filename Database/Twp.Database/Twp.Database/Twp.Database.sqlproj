@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Twp.Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{8219b26b-9760-4202-9702-ff6fea88d653}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Twp.Database</RootNamespace>
+    <AssemblyName>Twp.Database</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo" />
+    <Folder Include="scripts" />
+    <Folder Include="dbo\tables" />
+    <Folder Include="scripts\seeds" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\tables\Branding.sql" />
+    <Build Include="dbo\tables\BroadcastEmail.sql" />
+    <Build Include="dbo\tables\BroadcastEmailDestination.sql" />
+    <Build Include="dbo\tables\BusinessType.sql" />
+    <Build Include="dbo\tables\Country.sql" />
+    <Build Include="dbo\tables\EmailTemplate.sql" />
+    <Build Include="dbo\tables\InAppNotification.sql" />
+    <Build Include="dbo\tables\InAppNotificationType.sql" />
+    <Build Include="dbo\tables\Location.sql" />
+    <Build Include="dbo\tables\Menu.sql" />
+    <Build Include="dbo\tables\MenuRoleType.sql" />
+    <Build Include="dbo\tables\NotificationType.sql" />
+    <Build Include="dbo\tables\Permission.sql" />
+    <Build Include="dbo\tables\PriorityAnnouncement.sql" />
+    <Build Include="dbo\tables\RfIdTagNumber.sql" />
+    <Build Include="dbo\tables\RoleType.sql" />
+    <Build Include="dbo\tables\RoleTypePermission.sql" />
+    <Build Include="dbo\tables\SmsTemplate.sql" />
+    <Build Include="dbo\tables\StateProvince.sql" />
+    <Build Include="dbo\tables\SteamShipCompany.sql" />
+    <Build Include="dbo\tables\Terminal.sql" />
+    <Build Include="dbo\tables\TerminalInformationCategory.sql" />
+    <Build Include="dbo\tables\TerminalInformationTile.sql" />
+    <Build Include="dbo\tables\TerminalMenu.sql" />
+    <Build Include="dbo\tables\Trucker.sql" />
+    <Build Include="dbo\tables\UserAuthentication.sql" />
+    <Build Include="dbo\tables\UserAuthenticationHistory.sql" />
+    <Build Include="dbo\tables\UserNotificationPreference.sql" />
+    <Build Include="dbo\tables\UserProfile.sql" />
+    <Build Include="dbo\tables\UserSignUp.sql" />
+    <Build Include="dbo\tables\UserSignUpApproval.sql" />
+    <Build Include="dbo\tables\UserSignUpReasonDeny.sql" />
+    <Build Include="dbo\tables\UserTerminal.sql" />
+    <Build Include="dbo\tables\UserTerminalRoleType.sql" />
+    <Build Include="dbo\tables\UserTerminalSteamShipCompany.sql" />
+    <Build Include="dbo\tables\UserTerminalTrucker.sql" />
+    <Build Include="scripts\seeds\BusinessTypes.sql" />
+    <Build Include="scripts\seeds\Country.sql" />
+    <Build Include="scripts\seeds\EmailTemplate_Add_BroadcastNotification.sql" />
+    <Build Include="scripts\seeds\EmailTemplate_By_StorageAccount_Urls.sql" />
+    <Build Include="scripts\seeds\InAppNotificationTypes.sql" />
+    <Build Include="scripts\seeds\Menus.sql" />
+    <Build Include="scripts\seeds\NotificationTypes.sql" />
+    <Build Include="scripts\seeds\RoleTypes.sql" />
+    <Build Include="scripts\seeds\SmsTemplate_Add_BroadcastNotification.sql" />
+    <Build Include="scripts\seeds\SmsTemplate_Add_PasswordRecovery.sql" />
+    <Build Include="scripts\seeds\StateProvince.sql" />
+    <Build Include="scripts\seeds\TerminalInformationCategory_Add_DefaultCategory.sql" />
+    <Build Include="scripts\seeds\UserSignUpReasonDeny.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="twp-database-azure-pipeline.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="scripts\Script.PostDeployment.sql" />
+  </ItemGroup>
+</Project>
