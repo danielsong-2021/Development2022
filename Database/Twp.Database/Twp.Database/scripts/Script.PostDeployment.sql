@@ -9,7 +9,7 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
-:r .\Seeds\BisinessTypes.sql
+:r .\Seeds\BusinessTypes.sql
 :r .\Seeds\Country.sql
 :r .\Seeds\EmailTemplate_Add_BroadcastNotification.sql
 :r .\Seeds\EmailTemplate_By_StorageAccount_Urls.sql
