@@ -1,7 +1,6 @@
 C:\Development2022\Database\Twp.Database\Twp.Database\bin\Debug\Twp.Database.dacpac
 C:\Development2022\Database\Twp.Database\Twp.Database\bin\Debug\Twp.Database.dll
 C:\Development2022\Database\Twp.Database\Twp.Database\bin\Debug\Twp.Database.pdb
-C:\Development2022\Database\Twp.Database\Twp.Database\obj\Debug\Twp.Database.sqlproj.AssemblyReference.cache
 C:\Development2022\Database\Twp.Database\Twp.Database\obj\Debug\Model.xml
 C:\Development2022\Database\Twp.Database\Twp.Database\obj\Debug\refactor.xml
 C:\Development2022\Database\Twp.Database\Twp.Database\obj\Debug\postdeploy.sql
