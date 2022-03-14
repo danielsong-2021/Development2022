@@ -9,5 +9,16 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
-
+:r .\Seeds\BisinessTypes.sql
+:r .\Seeds\Country.sql
+:r .\Seeds\EmailTemplate_Add_BroadcastNotification.sql
+:r .\Seeds\EmailTemplate_By_StorageAccount_Urls.sql
+:r .\Seeds\InAppNotificationTypes.sql
+:r .\Seeds\Menus.sql
+:r .\Seeds\NotificationTypes.sql
 :r .\Seeds\RoleTypes.sql
+:r .\Seeds\SmsTemplate_Add_BroadcastNotification.sql
+:r .\Seeds\SmsTemplate_Add_PasswordRecovery.sql
+:r .\Seeds\StateProvince.sql
+:r .\Seeds\TerminalInformationCategory_Add_DefaultCategory.sql
+:r .\Seeds\UserSignUpReasonDeny.sql
