@@ -98,19 +98,19 @@
     <Build Include="dbo\tables\UserTerminalRoleType.sql" />
     <Build Include="dbo\tables\UserTerminalSteamShipCompany.sql" />
     <Build Include="dbo\tables\UserTerminalTrucker.sql" />
-    <Build Include="scripts\seeds\BusinessTypes.sql" />
-    <Build Include="scripts\seeds\Country.sql" />
-    <Build Include="scripts\seeds\EmailTemplate_Add_BroadcastNotification.sql" />
-    <Build Include="scripts\seeds\EmailTemplate_By_StorageAccount_Urls.sql" />
-    <Build Include="scripts\seeds\InAppNotificationTypes.sql" />
-    <Build Include="scripts\seeds\Menus.sql" />
-    <Build Include="scripts\seeds\NotificationTypes.sql" />
-    <Build Include="scripts\seeds\RoleTypes.sql" />
-    <Build Include="scripts\seeds\SmsTemplate_Add_BroadcastNotification.sql" />
-    <Build Include="scripts\seeds\SmsTemplate_Add_PasswordRecovery.sql" />
-    <Build Include="scripts\seeds\StateProvince.sql" />
-    <Build Include="scripts\seeds\TerminalInformationCategory_Add_DefaultCategory.sql" />
-    <Build Include="scripts\seeds\UserSignUpReasonDeny.sql" />
+    <None Include="scripts\seeds\BusinessTypes.sql" />
+    <None Include="scripts\seeds\Country.sql" />
+    <None Include="scripts\seeds\EmailTemplate_Add_BroadcastNotification.sql" />
+    <None Include="scripts\seeds\EmailTemplate_By_StorageAccount_Urls.sql" />
+    <None Include="scripts\seeds\InAppNotificationTypes.sql" />
+    <None Include="scripts\seeds\Menus.sql" />
+    <None Include="scripts\seeds\NotificationTypes.sql" />
+    <None Include="scripts\seeds\RoleTypes.sql" />
+    <None Include="scripts\seeds\SmsTemplate_Add_BroadcastNotification.sql" />
+    <None Include="scripts\seeds\SmsTemplate_Add_PasswordRecovery.sql" />
+    <None Include="scripts\seeds\StateProvince.sql" />
+    <None Include="scripts\seeds\TerminalInformationCategory_Add_DefaultCategory.sql" />
+    <None Include="scripts\seeds\UserSignUpReasonDeny.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="twp-database-azure-pipeline.yml" />
