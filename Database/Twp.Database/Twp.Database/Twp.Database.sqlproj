@@ -60,6 +60,11 @@
     <Folder Include="scripts" />
     <Folder Include="dbo\tables" />
     <Folder Include="scripts\seeds" />
+    <Folder Include="scripts\seeds\AddMenuRoleType" />
+    <Folder Include="scripts\seeds\AddPermissions" />
+    <Folder Include="scripts\seeds\AddPermissions\001_AddPermissionsIds" />
+    <Folder Include="scripts\seeds\AddPermissions\002_AddRoleTypePermissions" />
+    <Folder Include="scripts\seeds\AddPermissions\002_AddRoleTypePermissions\001_Terminal_Announcements_Tiles" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\tables\Branding.sql" />
@@ -111,6 +116,15 @@
     <None Include="scripts\seeds\StateProvince.sql" />
     <None Include="scripts\seeds\TerminalInformationCategory_Add_DefaultCategory.sql" />
     <None Include="scripts\seeds\UserSignUpReasonDeny.sql" />
+    <Build Include="scripts\seeds\AddMenuRoleType\MenuRoleType_For_Role_DefaultUser.sql" />
+    <Build Include="scripts\seeds\AddMenuRoleType\MenuRoleType_For_Role_LaborUser.sql" />
+    <Build Include="scripts\seeds\AddMenuRoleType\MenuRoleType_For_Role_SysAdmin.sql" />
+    <Build Include="scripts\seeds\AddMenuRoleType\MenuRoleType_For_Role_TerminalAdmin.sql" />
+    <Build Include="scripts\seeds\AddPermissions\001_AddPermissionsIds\Add_Terminal_Announcements_Tiles_Permissions.sql" />
+    <Build Include="scripts\seeds\AddPermissions\002_AddRoleTypePermissions\001_Terminal_Announcements_Tiles\Add_Permissions_DefaultUser.sql" />
+    <Build Include="scripts\seeds\AddPermissions\002_AddRoleTypePermissions\001_Terminal_Announcements_Tiles\Add_Permissions_LaborUser.sql" />
+    <Build Include="scripts\seeds\AddPermissions\002_AddRoleTypePermissions\001_Terminal_Announcements_Tiles\Add_Permissions_SysAdmin.sql" />
+    <Build Include="scripts\seeds\AddPermissions\002_AddRoleTypePermissions\001_Terminal_Announcements_Tiles\Add_Permissions_TerminalAdmin.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="twp-database-azure-pipeline.yml" />
