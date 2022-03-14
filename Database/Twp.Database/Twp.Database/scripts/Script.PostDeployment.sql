@@ -27,8 +27,6 @@ Post-Deployment Script Template
 :r .\Seeds\AddMenuRoleType\MenuRoleType_For_Role_SysAdmin.sql
 :r .\Seeds\AddMenuRoleType\MenuRoleType_For_Role_TerminalAdmin.sql
 :r .\Seeds\AddPermissions\001_AddPermissionsIds\Add_Terminal_Announcements_Tiles_Permissions.sql
-
-:setvar ROLE_USER UNIQUEIDENTIFIER
 :r .\Seeds\AddPermissions\002_AddRoleTypePermissions\001_Terminal_Announcements_Tiles\Add_Permissions_DefaultUser.sql
 :r .\Seeds\AddPermissions\002_AddRoleTypePermissions\001_Terminal_Announcements_Tiles\Add_Permissions_LaborUser.sql
 :r .\Seeds\AddPermissions\002_AddRoleTypePermissions\001_Terminal_Announcements_Tiles\Add_Permissions_SysAdmin.sql
