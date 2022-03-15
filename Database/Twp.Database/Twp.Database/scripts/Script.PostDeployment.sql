@@ -11,8 +11,13 @@ Post-Deployment Script Template
 */
 :r .\Seeds\BusinessTypes.sql
 :r .\Seeds\Country.sql
-:r .\Seeds\EmailTemplate_Add_BroadcastNotification.sql
-:r .\Seeds\EmailTemplate_By_StorageAccount_Urls.sql
+:r .\Seeds\EmailTemplates\EmailTemplate_Add_AdminNotificationToApproveUsers.sql
+:r .\Seeds\EmailTemplates\EmailTemplate_Add_BroadcastNotification.sql
+:r .\Seeds\EmailTemplates\EmailTemplate_Add_PasswordRecovery.sql
+:r .\Seeds\EmailTemplates\EmailTemplate_Add_UserSignUpApprovedByAdmin.sql
+:r .\Seeds\EmailTemplates\EmailTemplate_Add_UserSignUpAutomaticApproved.sql
+:r .\Seeds\EmailTemplates\EmailTemplate_Add_UserSignUpNeedAdminApproval.sql
+:r .\Seeds\EmailTemplates\EmailTemplate_Add_UserSignUpNotApprovedByAdmin.sql
 :r .\Seeds\InAppNotificationTypes.sql
 :r .\Seeds\Menus.sql
 :r .\Seeds\NotificationTypes.sql

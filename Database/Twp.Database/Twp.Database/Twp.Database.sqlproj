@@ -65,6 +65,7 @@
     <Folder Include="scripts\seeds\AddPermissions\001_AddPermissionsIds" />
     <Folder Include="scripts\seeds\AddPermissions\002_AddRoleTypePermissions" />
     <Folder Include="scripts\seeds\AddPermissions\002_AddRoleTypePermissions\001_Terminal_Announcements_Tiles" />
+    <Folder Include="scripts\seeds\EmailTemplates" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\tables\Branding.sql" />
@@ -125,9 +126,17 @@
     <None Include="scripts\seeds\AddPermissions\002_AddRoleTypePermissions\001_Terminal_Announcements_Tiles\Add_Permissions_LaborUser.sql" />
     <None Include="scripts\seeds\AddPermissions\002_AddRoleTypePermissions\001_Terminal_Announcements_Tiles\Add_Permissions_SysAdmin.sql" />
     <None Include="scripts\seeds\AddPermissions\002_AddRoleTypePermissions\001_Terminal_Announcements_Tiles\Add_Permissions_TerminalAdmin.sql" />
+    <None Include="scripts\seeds\EmailTemplates\EmailTemplate_Add_UserSignUpNotApprovedByAdmin.sql" />
+    <None Include="scripts\seeds\EmailTemplates\EmailTemplate_Add_AdminNotificationToApproveUsers.sql" />
+    <None Include="scripts\seeds\EmailTemplates\EmailTemplate_Add_BroadcastNotification.sql" />
+    <None Include="scripts\seeds\EmailTemplates\EmailTemplate_Add_PasswordRecovery.sql" />
+    <None Include="scripts\seeds\EmailTemplates\EmailTemplate_Add_UserSignUpApprovedByAdmin.sql" />
+    <None Include="scripts\seeds\EmailTemplates\EmailTemplate_Add_UserSignUpAutomaticApproved.sql" />
+    <None Include="scripts\seeds\EmailTemplates\EmailTemplate_Add_UserSignUpNeedAdminApproval.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="twp-database-azure-pipeline.yml" />
+    <None Include="scripts\seeds\AddMenuRoleType\MenuRoleType_For_Role.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="scripts\Script.PostDeployment.sql" />
